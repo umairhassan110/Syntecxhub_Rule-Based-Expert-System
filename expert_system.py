@@ -38,7 +38,7 @@ class ExpertSystem:
                         self.log.append(rule["explanation"])
                         fired_rules.add(rule["id"])
                         print(f"  > Rule {rule['id']} Fired: Derived '{new_fact}'")
-                        changed = True # Continue checking for next-level chaining
+                        changed = True
         
         return self.facts
 
